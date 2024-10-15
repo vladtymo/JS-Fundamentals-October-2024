@@ -1,9 +1,11 @@
 // --------------- TODO
+hours = -100;
+
 console.log("&& && && Result:");
-console.log(hours > 0 && hours < 23 && hours != 12); // -20
+console.log(hours > 0 && hours < 23 && hours != 12); // false
 
 console.log("|| || || Result:");
-console.log(hours > 0 || hours < 23 || hours != 12); // -20
+console.log(hours > 0 || hours < 23 || hours != 12); // true
 
 console.log(5 > 1 || 5 > 10); // true
 console.log(5 > 1 && 5 > 10); // false
@@ -17,7 +19,7 @@ console.log("10" && "false" && null && undefined); // return first false: null
 let email = prompt("Enter your email:");
 
 // if (email == "")
-//     email = "not entered";
+//     email = "anonymous";
 
 // or using || operator
 const username = email || "anonymous";
@@ -25,7 +27,7 @@ const username = email || "anonymous";
 // set default value of email == false
 console.log(`Email is ${username}`);
 
-let result = hours < 8 && Math.random();
+let result = hours < 8 && Math.random(); // TODO
 // the same
 if (hours < 8) result = Math.random();
 
