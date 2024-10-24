@@ -22,3 +22,16 @@ h1 {
     background-color: darkgoldenrod;
     padding: 30px;
 }
+
+.game-board {
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+}
+
+.hero {
+    border-radius: 50%;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+}
