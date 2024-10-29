@@ -52,7 +52,7 @@ $listItems.last().one('mouseenter', () => console.log("Last item hovered!")); //
 
 // ------- the same without jQuery
 // Array.from(document.querySelectorAll('ol.product-list li')).forEach(i => {
-//     i.addEventListener('click', function() {
+//     i.addEventListener('click', function () {
 //         this.classList.toggle('selected');
 //     });
 // });
