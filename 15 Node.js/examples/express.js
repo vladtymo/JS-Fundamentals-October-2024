@@ -1,13 +1,13 @@
 // ---------- server logic ----------
 
 const fs = require('fs');
-// const cors = require('cors');
+const cors = require('cors');
 
 // connect express module
 const express = require('express'),
     app = express();
 
-// app.use(cors()); // allow all
+app.use(cors()); // allow all
 
 // allow specific origins only
 // app.use(cors({
@@ -67,6 +67,7 @@ app.post("/api/users/:name/:surname", (req, res) => {
     res.status(200).type('text').send(`User ${name} ${surname} was created! (route params)`);
 });
 
+// POST: ~/api/users?name=Vlad&surname=Tymo
 app.post("/api/users", (req, res) => {
     // req.query - get query parameters value
 
