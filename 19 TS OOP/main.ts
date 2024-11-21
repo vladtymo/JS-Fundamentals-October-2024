@@ -67,7 +67,6 @@ class User implements IExportable {
     export(): void {
         console.log("Exporting user data...")
     }
-
 }
 
 class Admin implements IExportable {
